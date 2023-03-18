@@ -180,7 +180,7 @@ export default function Home() {
           <div className="grid grid-cols-1 w-full h-96 mx-1 my-4 px-2 py-4 rounded-md bg-slate-900 justify-center overflow-y-auto">
             {memosArray.map((memo, i) => {
               return (
-                <div className="h-28 mx-4 my-3 bg-slate-600 rounded-md font-semibold" key={i}>
+                <div className=" h-max sm:w-max sm:h-28 mx-4 my-3 bg-slate-600 rounded-md font-semibold" key={i}>
                   <div className="grid  items-center px-2 py-1  ">
                     <span>Account: {memo.from}</span>
                     <span>Name: {memo.name}</span>
