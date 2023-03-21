@@ -1,20 +1,20 @@
 import { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 
-import Withdraw from './components/Withdraw';
+import Withdraw from './Withdraw';
 import abi from './utils/abi.json';
 
 
-export default function Home() {
+export default function App() {
   const [account, setAccount] = useState(null);
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [memosArray, setMemosArray] = useState([]);
   const [balance, setBalance] = useState("");
 
-  const owner = process.env.NEXT_PUBLIC_CONTRACT_OWNER
+  const owner = process.env.REACT_APP_CONTRACT_OWNER
 
-  const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS;
+  const contractAddress = process.env.REACT_APP_CONTRACT_ADDRESS;
 
 
 
